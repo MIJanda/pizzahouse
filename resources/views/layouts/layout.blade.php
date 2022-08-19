@@ -18,9 +18,19 @@
             body {
                 font-family: 'Nunito', sans-serif;
             }
+
+            footer {
+                background: #eee;
+                padding: 20px;
+                text-align: center;
+            }
         </style>
     </head>
     <body class="antialiased">
         @yield('content')
+
+        <footer>
+            Copyright 2020 Pizza House
+        </footer>
     </body>
 </html>
