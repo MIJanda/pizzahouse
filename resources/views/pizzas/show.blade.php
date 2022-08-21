@@ -1,11 +1,11 @@
 @extends('layouts.layout')
 
 @section('content')
-<div>
+<div class="wrapper pizza-details">
+    <h1>Order for {{ $pizza->name }}</h1>
     <div class="content">
-        <div class="title m-b-md">
-            Pizza List - {{ $id }}
-        </div>
+        <p class="type">Type - {{ $pizza->type }}</p>
+        <div class="base">Base - {{ $pizza->base }}</div>
     </div>
 </div>
 @endsection
