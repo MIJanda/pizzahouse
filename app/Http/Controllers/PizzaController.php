@@ -37,12 +37,13 @@ class PizzaController extends Controller
     {
         $pizza = new Pizza();
 
-        $pizza->name = request('name');
         $pizza->type = request('type');
         $pizza->base = request('base');
+        $pizza->name = request('name');
+        $pizza->toppings = request('toppings');
 
         $pizza->save();
-        
-        return redirect('/');
+
+        return redirect('/')->with('mssg', 'Thanks for your order.');
     }
 }
