@@ -7,5 +7,6 @@
         <p class="type">Type - {{ $pizza->type }}</p>
         <div class="base">Base - {{ $pizza->base }}</div>
     </div>
+    <a href="/pizzas" class="back"><- Back to all pizzas</a>
 </div>
 @endsection
