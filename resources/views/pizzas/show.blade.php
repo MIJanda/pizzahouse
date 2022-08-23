@@ -5,7 +5,12 @@
     <h1>Order for {{ $pizza->name }}</h1>
     <div class="content">
         <p class="type">Type - {{ $pizza->type }}</p>
-        <div class="base">Base - {{ $pizza->base }}</div>
+        <p class="base">Base - {{ $pizza->base }}</p>
+        <ul>
+            @foreach ($pizza->toppings as $topping)
+                <li>{{ $topping }}</li>
+            @endforeach
+        </ul>
     </div>
     <a href="/pizzas" class="back"><- Back to all pizzas</a>
 </div>
