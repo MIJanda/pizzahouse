@@ -19,7 +19,7 @@
             <option value="cheesy crust">Cheesy Crust</option>
             <option value="garlic crust">Garlic Crust</option>
             <option value="thin & crispy">Thin & Crispy</option>
-            <option value="thick"></option>
+            <option value="thick">Thick</option>
         </select>
         <input type="submit" value="Order Pizza">
     </form>
