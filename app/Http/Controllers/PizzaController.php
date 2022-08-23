@@ -42,7 +42,7 @@ class PizzaController extends Controller
         $pizza->base = request('base');
 
         $pizza->save();
-        
-        return redirect('/');
+
+        return redirect('/')->with('mssg', 'Thanks for your order.');
     }
 }
